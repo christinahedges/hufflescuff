@@ -37,7 +37,21 @@ def make_scat_fig(x, y):
     return fig
 
 def show_widget(x, y, notebook_url='localhost:8888', ntheta=80, nrho=121):
+    """ Shows the Hough Transform widget
 
+    Paramters
+    ---------
+    x : np.ndarray
+        Input x values for transform
+    y : np.ndarray
+        Input y values for transform
+    notebook_url : str
+        The jupyter notebook local host URL you are using
+    ntheta : int
+        Number of bins in the theta dimension
+    nrho :
+        Number of bins in the rho dimension
+    """
     def hough_transform(x, y, ntheta=80, nrho=121):
         theta = np.deg2rad(np.linspace(0, 180, ntheta + 1)[:-1])
 
