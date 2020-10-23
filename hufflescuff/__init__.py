@@ -4,3 +4,5 @@ from __future__ import absolute_import
 
 import os
 PACKAGEDIR = os.path.abspath(os.path.dirname(__file__))
+
+from .widget import show_widget
